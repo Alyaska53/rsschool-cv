@@ -116,3 +116,19 @@ The application uses:
 * Git
 
 ***
+
+### Courses:
+
+* HTML and CCS Tutorials on the [Code-Basics](https://ru.code-basics.com/) (completed)
+* JavaScript Manual on [learn.javascript.ru](https://learn.javascript.ru/) (completed)
+* RS School Course "JS / FRONT-END" (completed stages 0 and 1)
+* Training on algorithms from Yandex (completed)
+* React + Redux - Professional Development from Udemy (completed)
+
+***
+
+### Languages:
+
+* Russian (native)
+* Belarusian (native)
+* English (intermediate)
