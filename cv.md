@@ -23,3 +23,49 @@ I always strive to find effective ways to solve specific problems. I am easy to 
 My main goal is to start a career as a frontend developer and grow to a team leader in 4-5 years.
 
 ***
+
+### Skills and Proficiency:
+
+* HTML5, CSS3  
+* JavaScript 
+* React
+* Redux 
+* Node.js Basics
+* Sass
+* Webpack
+* Boodstrap
+* Git 
+* Figma  
+
+***
+
+### Code example:
+
+**KATA from CODEWARS**: _Write a function that takes a string of parentheses, and determines if the order of the parentheses is valid._  
+_The function should return_ `true` _if the string is valid, and_ `false` _if it's invalid._
+
+```
+function validParentheses(parens) {
+  if (parens.length > 100) return false;
+      
+  const brackets = parens.split('')
+                         .filter(el => (el === ')') || (el === '('));  
+  const stack = [];
+  
+  brackets.forEach((element) => {
+    if (element === '(') || 
+        !stack.length ||
+        stack[stack.length - 1] === ')') {
+      
+      stack.push(element);
+      return;
+    } 
+    
+    stack.pop();
+    return;
+  });
+  
+  return !stack.length;
+}
+```
+***
