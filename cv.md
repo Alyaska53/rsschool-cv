@@ -69,3 +69,50 @@ function validParentheses(parens) {
 }
 ```
 ***
+
+### Experience
+
+**_text.AI - anti-plagiarism application_**
+
+[link to GitHub repository](https://github.com/Alyaska53/textAI-release)
+
+This is an application that interacts with the backend and calculates the percentage of uniqueness of your text.
+
+The application uses:
+* JavaScript (ES6)
+* asynchronous programming (async/await)
+* mySQL to create database
+* binary search and hash functions in C++
+* adaptive design
+* Git
+
+**_Weather forecast_**
+
+[link to GitHub repository](https://github.com/Alyaska53/weather-forecast)
+
+An application on React that can interact with the API and shows the current weather in the selected city.
+The application has a history of weather search.
+
+The application uses:
+* React components
+* React hooks
+* Redux
+* Webpack
+* Babel
+* adaptive design
+* Git
+
+**_myToDoList_**
+
+[link to GitHub repository](https://github.com/Alyaska53/myToDoList)
+
+Classic to-do list app.
+
+The application uses:
+* JavaScript (ES6)
+* Boodstrap
+* adaptive design
+* quicksort algorithm
+* Git
+
+***
