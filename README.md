@@ -1,1 +1,1 @@
-# https://Alyaska53.github.io/rsschool-cv/cv
+# https://Alyaska53.github.io/rsschool-cv/
