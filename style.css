@@ -13,7 +13,5 @@
 
 body {
   width: 100vw;
-  display: flex;
-  justify-content: center;
   background: var(--light-color);
 }
