@@ -10,13 +10,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
   color: var(--dark-color);
 }
 
 body {
   /* width: 100vw; */
   background: #f5f5f5;
+  font-family: 'Raleway', sans-serif;
 }
 
 p {
@@ -476,4 +476,13 @@ h5 {
   border-width: 85px 30px 0 0;
   border-color: var(--main-blue) #df323200 transparent transparent;
   transform: scale(-1, 1);
+}
+
+.code {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.code p {
+  font-size: 16px;
 }
