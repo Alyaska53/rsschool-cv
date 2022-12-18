@@ -283,13 +283,15 @@ h5 {
   color: var(--paragraph-color);
 }
 
-.education__timeline {
+.education__timeline,
+.projects__timeline {
   position: relative;
   width: 100%;
   margin-top: 30px;
 }
 
-.education__timeline::before {
+.education__timeline::before,
+.projects__timeline::before {
   content: '';
   position: absolute;
   top: 25px;
