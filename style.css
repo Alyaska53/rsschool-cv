@@ -1,17 +1,208 @@
 :root {
-  --dark-color: #050114;
+  --dark-color: #0a090a;
   --light-color: #fffefd;
+  --main-blue: #1F5694;
+  --paragraph-color: #616161;
+  --light-hover: #ffffffd0;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: var(--dark-color);
 }
 
 body {
   width: 100vw;
   background: var(--light-color);
+}
+
+p {
+  font-family: 'Mulish', sans-serif;
+  font-size: 15px;
+  color: var(--paragraph-color);
+}
+
+h1, 
+h2, 
+h3, 
+h4 {
+  font-family: 'Raleway', sans-serif;
+}
+
+.header--background {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 370px;
+  background: url(./assets/images/headerBackground.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.main {
+  width: 100%;
+  max-width: 1000px;
+  margin: -170px auto 0;
+}
+
+.container {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.welcome-section {
+  position: relative;
+  z-index: 1;
+  height: 400px;
+  box-shadow: 0 0 7px #a09e9e9f;
+}
+
+.image-container {
+  position: absolute;
+  right: 0;
+}
+
+.image-container img {
+  width: 400px;
+  height: auto;
+}
+
+.slant {
+  top: 0;
+  z-index: 1;
+  position: absolute;
+  border-style: solid;
+  border-width: 400px 0 0 75px;
+  border-color: #df323200 transparent transparent var(--main-blue);
+}
+
+.info-container {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 600px;
+  height: 400px;
+  padding: 40px;
+  background: var(--main-blue);
+}
+
+.main-title,
+.second-title {
+  width: 100%;
+  color: var(--light-color);
+  text-shadow: 2px 2px 4px #0000004a;
+}
+
+.main-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 36px;
+}
+
+.second-title {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.contacts-list {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.contacts-list li,
+.contacts-list li a {
+  color: var(--light-color);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 1.7;
+  transition: all 0.3s linear;
+}
+
+.contacts-list li a:hover {
+  text-shadow: 0 0 3px var(--light-color);
+}
+
+.contacts-list li span svg {
+  position: relative;
+  top: 4px;
+  left: 0;
+  fill: var(--light-color)
+}
+
+.contacts-links-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.contacts-links-list__link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.contacts-links-list__link:hover {
+  box-shadow: 0 0 10px var(--light-hover);
+}
+
+.contacts-links-list__link svg {
+  position: relative;
+  fill: var(--light-color);
+}
+
+.telegram {
+  background-color: #50a2ff;
+}
+
+.telegram svg {
+  width: 25px;
+  height: 25px;
+  top: 7px;
+  left: 6px;
+}
+
+.gmail {
+  background-color: #ff1f1f;
+}
+
+.gmail svg {
+  width: 27px;
+  height: 27px;
+  top: 6px;
+  left: 6px;
+}
+
+.linkedin {
+  background-color: #002652;
+}
+
+.linkedin svg {
+  top: 7px;
+  left: 7px;
+  width: 25px;
+  height: 25px;
+}
+
+.github {
+  background-color: var(--main-blue);
+}
+
+.github svg {
+  top: -10px;
+  left: -10px;
+  width: 60px;
+  height: 60px;
+  fill: var(--light-color);
 }
