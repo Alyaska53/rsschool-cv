@@ -417,3 +417,63 @@ h5 {
   text-align: center;
   color: var(--light-color);
 }
+
+.languages-blocks {
+  width: 100%;
+  margin-top: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.english,
+.belarussian,
+.russian {
+  position: relative;
+  width: 250px;
+  height: 85px;
+  padding: 20px;
+  background: var(--main-blue);
+}
+
+.english h6,
+.belarussian h6,
+.russian h6 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--light-color);
+}
+
+.english p,
+.belarussian p,
+.russian p {
+  color: var(--light-color);
+}
+
+.english::after,
+.belarussian::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 1;
+  position: absolute;
+  border-style: solid;
+  border-width: 85px 0 0 30px;
+  border-color: #df323200 transparent transparent var(--main-blue);
+}
+
+.belarussian::before,
+.russian::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 100%;
+  z-index: 1;
+  position: absolute;
+  border-style: solid;
+  border-width: 85px 30px 0 0;
+  border-color: var(--main-blue) #df323200 transparent transparent;
+  transform: scale(-1, 1);
+}
