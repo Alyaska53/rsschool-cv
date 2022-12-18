@@ -10,6 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/styles/default.min.css">
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/highlight.min.js"></script>
 </head>
 <body>
   <header class="header">
@@ -247,6 +249,48 @@
         </div>
       </div>
     </section>
+
+    <section class="code-example container">
+      <div class="section__title">
+        <img class="section__title--img" src="./assets/images/code.png" alt="code">
+        <h3 class="section__title--text">Code example</h3>
+      </div>
+      
+      <div class="code">
+        <p>
+          KATA from CODEWARS: write a function that takes a string of parentheses, and determines if the order of the parentheses is valid.
+          The function should return true if the string is valid, and false if it’s invalid.
+        </p>
+        <pre>
+          <code class="code-from-codewars">
+            function validParentheses(parens) {
+              if (parens.length > 100) return false;
+                  
+              const brackets = parens.split('')
+                                     .filter(el => (el === ')') || (el === '('));  
+              const stack = [];
+              
+              brackets.forEach((element) => {
+                if (element === '(') || 
+                    !stack.length ||
+                    stack[stack.length - 1] === ')') {
+                  
+                  stack.push(element);
+                  return;
+                } 
+                
+                stack.pop();
+                return;
+              });
+              
+              return !stack.length;
+            }
+          </code>
+        </pre>
+      </div>
+    </section>
   </main>
+
+  <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
