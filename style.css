@@ -486,3 +486,17 @@ h5 {
 .code p {
   font-size: 16px;
 }
+
+.footer {
+  width: 1000px;
+  padding: 10px 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rss-link svg {
+  width: 100px;
+}
