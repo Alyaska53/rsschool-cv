@@ -244,8 +244,15 @@ h5 {
   height: 36px;
   border: none;
   border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: var(--main-blue);
   cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--light-color);
 }
 
 .btn a {
