@@ -60,29 +60,113 @@ h5 {
   margin-bottom: 60px;
 }
 
-.menu-container {
-  margin-bottom: 10px;
+.menu {
+  position: fixed;
+  width: 225px;
+  height: 100%;
+  top: 0;
+  left: -225px;
+  z-index: 10;
+  text-align: left;
+  background: #f5f5f5;
+  transition: all 0.4s linear;
 }
 
-.menu {
-  position: relative;
-  z-index: 4;
+.menu-open {
+  left: 0;
+  box-shadow: 0 2px 15px 0 #00000065;
+}
+
+.menu-logo {
   width: 100%;
+  height: 225px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  background: var(--main-blue);
+}
+
+.menu-logo img {
+  width: 150px;
+}
+
+.menu-list {
+  width: 100%;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   list-style: none;
 }
 
-.menu a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: var(--light-color);
-  transition: all 0.3s linear;
+.menu-item {
+  width: 100%;
 }
 
-.menu a:hover {
-  text-shadow: 0 0 8px var(--light-color);
+.menu-link {
+  display: block;
+  width: 100%;
+  padding: 10px 30px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+}
+
+.menu-link:hover {
+  color: var(--orange);
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 20px;
+  right: -65px;
+  z-index: 11;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #d6d6d642;
+  text-align: center;
+  font-size: 14px;
+  line-height: 40px;
+  cursor: pointer;
+  background: #cfcfcf67;
+  transition: all .5s ease-in-out;
+}
+
+.toggle-stick {
+  position: absolute;
+  left: 10px;
+  width: 18px;
+  height: 3px;
+  background: var(--orange);
+  transition: all 0.8s ease-in-out;
+}
+
+.first-stick {
+  top: 12px;
+}
+
+.second-stick {
+  top: 18px;
+}
+
+.third-stick {
+  top: 24px;
+}
+
+.first-transform {
+  top: 18px;
+  transform: rotate(45deg);
+}
+
+.second-transform {
+  opacity: 0;
+}
+
+.third-transform {
+  top: 18px;
+  transform: rotate(-45deg);
 }
 
 .welcome-section {
@@ -369,7 +453,7 @@ h5 {
   position: relative;
   width: 420px;
   padding: 30px 15px 20px;
-  border-left: 5px solid #ff5722;
+  border-left: 5px solid var(--orange);
   background: var(--light-color);
 }
 
