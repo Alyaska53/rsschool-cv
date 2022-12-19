@@ -484,6 +484,10 @@ h5 {
   font-weight: 400;
 }
 
+.card-main-title {
+  font-weight: 600;
+}
+
 .card-main-title,
 .card-second-title,
 .card-text {
@@ -621,3 +625,268 @@ h5 {
 .rss-link svg {
   width: 100px;
 }
+
+@media (max-width: 1050px) {
+  .main {
+    max-width: 720px;
+    padding: 0 10px;
+  }
+
+  .info-container {
+    width: auto;
+  } 
+
+  .image-container {
+    overflow: hidden;
+  }
+
+  .image-container img {
+    position: relative;
+    left: 63px;
+  }
+
+  .about-me__info {
+    padding: 30px 40px;
+  }
+
+  .card-left,
+  .card-right {
+    width: 270px;
+  }
+
+  .skills-list ul {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .education__timeline::before, 
+  .projects__timeline::before {
+    height: 70%;
+  }
+
+  .english, .belarussian, .russian {
+    width: 200px;
+  }
+
+  .footer {
+    width: 720px;
+  }
+}
+
+@media (max-width: 740px) {
+  .header--background {
+    height: 300px;
+  }
+
+  .main {
+    max-width: none;
+    padding: 0 10px;
+    margin: -170px auto 0;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    box-shadow: none;
+  }
+
+  .image-container {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    z-index: 7;
+    overflow: visible;
+  }
+
+  .image-container img {
+    position: static;
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: 0 4px 5px #00000070;
+  }
+
+  .slant {
+    display: none;
+  }
+
+  .info-container {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+  } 
+
+  .second-title {
+    margin-bottom: 15px;
+  }
+
+  .contacts-list {
+    width: auto;
+    margin: 0 auto 25px;
+  }
+
+  .contacts-list li {
+    width: auto;
+  }
+
+  .timeline-block {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    gap: 20px;
+  }
+
+  .timeline-dot {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 5;
+  }
+
+  .card-left,
+  .card-right {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .card-left::before,
+  .card-right::before {
+    display: none;
+  }
+
+  .right,
+  .left {
+    margin-top: 20px;
+  }
+
+  .education__timeline::before,
+  .projects__timeline::before {
+    height: 90%;
+  }
+
+  .card-main-title {
+    width: 70%;
+    font-size: 17px;
+  }
+
+  .card-second-title {
+    width: 70%;
+  }
+
+  .english, .belarussian, .russian {
+    width: 170px;
+  }
+
+  .footer {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    margin-bottom: 25px;
+  }
+
+  .header--background {
+    height: 450px;
+  }
+
+  .main {
+    margin: -320px auto 0;
+  }
+
+  .image-container {
+    position: static;
+  }
+  
+  .info-container {
+    padding: 120px 30px 30px;
+    margin-top: -100px;
+  } 
+  .main-title,
+  .second-title {
+    text-align: center;
+  }
+
+  .contacts-links-list {
+    justify-content: center;
+  }
+
+  .languages-blocks {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .english, 
+  .belarussian, 
+  .russian {
+    width: 100%;
+  }
+
+  .english::after, 
+  .belarussian::after, 
+  .russian::after {
+    display: none;
+  }
+
+  .english::before, 
+  .belarussian::before, 
+  .russian::before {
+    display: none;
+  }
+
+  .footer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 440px) {
+  .header--background {
+    height: 450px;
+  }
+
+  .about-me__buttons {
+    flex-direction: column; 
+    gap: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .menu-toggle {
+    top: 10px;
+    right: -50px;
+  }
+  .image-container img {
+    width: 220px;
+  }
+
+  .main-title {
+    font-size: 22px;
+  }
+
+  .second-title {
+    font-size: 15px;
+  }
+
+  .contacts-list li,
+  .contacts-list li a {
+    font-size: 14px;
+    letter-spacing: normal;
+  }
+
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 10px;
+  }
+}
+
