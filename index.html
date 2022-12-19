@@ -16,21 +16,31 @@
 <body>
   <header id="home" class="header">
     <div class="header--background"></div>
+    <nav class="menu">
+      <div class="menu-options">
+        <div class="menu-logo">
+          <img src="./assets/images/menuImage.png" alt="menu logo">
+        </div>
+        <ul class="menu-list">
+          <li class="menu-item"><a class="menu-link" href="#home" target="_self">Home</a></li>
+          <li class="menu-item"><a class="menu-link" href="#contacts" target="_self">Contacts</a></li>
+          <li class="menu-item"><a class="menu-link" href="#about-me" target="_self">About me</a></li>
+          <li class="menu-item"><a class="menu-link" href="#education" target="_self">Education</a></li>
+          <li class="menu-item"><a class="menu-link" href="#skills" target="_self">Skills</a></li>
+          <li class="menu-item"><a class="menu-link" href="#projects" target="_self">Projects</a></li>
+          <li class="menu-item"><a class="menu-link" href="#languages" target="_self">Languages</a></li>
+          <li class="menu-item"><a class="menu-link" href="#code-example" target="_self">Code example</a></li>
+        </ul>
+      </div>
+      <div class="menu-toggle">
+        <div class="toggle-stick first-stick"></div>
+        <div class="toggle-stick second-stick"></div>
+        <div class="toggle-stick third-stick"></div>
+      </div>
+    </nav>
   </header>
 
   <main class="main">
-    <nav class="menu-container container">
-      <ul class="menu">
-        <li><a href="#contacts" target="_self">Contacts</a></li>
-        <li><a href="#about-me" target="_self">About me</a></li>
-        <li><a href="#education" target="_self">Education</a></li>
-        <li><a href="#skills" target="_self">Skills</a></li>
-        <li><a href="#projects" target="_self">Projects</a></li>
-        <li><a href="#languages" target="_self">Languages</a></li>
-        <li><a href="#code-example" target="_self">Code example</a></li>
-      </ul>
-    </nav>
-
     <section class="welcome-section container">
       <div class="image-container">
         <img src="./assets/images/avatar.jpg" alt="avatar">
@@ -175,7 +185,8 @@
           <ul>
             <li>Communication</li>
             <li>Teamwork</li>
-            <li>Goal-oriented</li>
+            <li>purposefulness</li>
+            <li>Punctuality</li>
             <li>Creativity</li>
           </ul>
         </div>
@@ -215,7 +226,7 @@
           <div class="card-left">
             <h4 class="card-main-title">Weather Forecast</h4>
             <a href="https://github.com/Alyaska53/weather-forecast"><h5 class="card-second-title">link to GitHub repository</h5></a>
-            <p class="card-text">Jan 2022 - Feb 2021</p>
+            <p class="card-text">Jan 2022 - Feb 2022</p>
             <p class="card-text">An application on React that can interact with the API and
               shows the current weather in the selected city. The application has a history of weather search.
             </p>
@@ -273,28 +284,28 @@
         </p>
         <pre>
           <code class="code-from-codewars">
-            function validParentheses(parens) {
-              if (parens.length > 100) return false;
-                  
-              const brackets = parens.split('')
-                                     .filter(el => (el === ')') || (el === '('));  
-              const stack = [];
-              
-              brackets.forEach((element) => {
-                if (element === '(') || 
-                    !stack.length ||
-                    stack[stack.length - 1] === ')') {
-                  
-                  stack.push(element);
-                  return;
-                } 
-                
-                stack.pop();
-                return;
-              });
-              
-              return !stack.length;
-            }
+    function validParentheses(parens) {
+      if (parens.length > 100) return false;
+          
+      const brackets = parens.split('')
+                              .filter(el => (el === ')') || (el === '('));  
+      const stack = [];
+      
+      brackets.forEach((element) => {
+        if (element === '(') || 
+            !stack.length ||
+            stack[stack.length - 1] === ')') {
+          
+          stack.push(element);
+          return;
+        } 
+        
+        stack.pop();
+        return;
+      });
+      
+      return !stack.length;
+    }
           </code>
         </pre>
       </div>
@@ -312,5 +323,6 @@
   </footer>
 
   <script>hljs.initHighlightingOnLoad();</script>
+  <script src="./assets/services/menu.js"></script>
 </body>
 </html>
